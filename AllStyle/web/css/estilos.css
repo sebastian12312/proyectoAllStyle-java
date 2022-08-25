@@ -1,0 +1,141 @@
+@font-face{
+    font-family: Omnes;
+    src: url(../fuentes/Omnes.ttf) format('truetype');
+}
+*{
+    font-family: Omnes;
+    margin: 0;
+    padding: 0;
+}
+ul{
+  list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between; 
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 2px 20px 5px rgb(204, 204, 204);
+}
+.titulo_header{
+    margin-right: 30px;
+    
+}
+.titulo_header a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    
+}
+
+.header_1{
+    display: flex;
+    margin-left: 4%;
+}
+.header_1_ul{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.header_1_li a{
+    text-decoration: none;
+   margin-right: 20px;
+    font-size: 18px;  
+    color: black;  
+  
+}
+.header_1_li{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.header_2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 4%;
+    display: flex;
+    
+}
+
+.header_2_a_1 a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #007bff;
+   
+}
+.header_2_a_2 a{
+    margin-left: 20px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+     color: black;
+}
+
+/*---------------*/
+.botones{
+    display: none;
+}
+.boton_bar img{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 2px 20px 5px rgb(204, 204, 204);
+}
+.boton_cart img{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 2px 20px 5px rgb(204, 204, 204);
+}
+.boton_cart a{
+    position: fixed;
+    right: 10px;
+    bottom:100px;
+    text-decoration: none;
+}
+.contador{
+    position: fixed;
+    right: 20px;
+    bottom:145px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.boton_bar a{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+
+
+/*resonsive */
+@media only screen and (max-width: 800px) {
+    .header_1_li{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+.header_2_a_1 span{
+    display: none;
+}
+.header_2_a_1{
+    margin-top: 5px;
+}
+}
+
+@media only screen and (max-width: 365px) {
+.header_2{
+    display: none;
+}
+.botones{
+    display: block  ;
+}
+}

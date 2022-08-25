@@ -1,0 +1,232 @@
+@font-face{
+    font-family: Omnes;
+    src: url(../fuentes/Omnes.ttf) format('truetype');
+}
+*{
+    font-family: Omnes;
+}
+.contenedor_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; 
+    pointer-events: none; 
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+   cursor: pointer;
+}
+.AbrirLogin{
+    opacity:1;
+    pointer-events: auto;
+    animation:  addLogin 3s;
+}
+.removeLogin{
+    display: none;
+    pointer-events: none;
+    animation:  removeLogin 3s;
+}
+@keyframes  addLogin {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+  } 
+  @keyframes  removeLogin {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+       top: -300px;
+        opacity: 0;
+    }
+  }
+
+.cerrar_login{
+   float: right;
+}
+.form{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: white;
+    box-shadow: 1px 2px 20px 2px rgb(221, 221, 221);
+    text-align: center;
+}
+
+.label label{
+    display: block;
+    font-size: 18px
+}
+.btn_login{
+    margin-top: 5px;
+    
+}
+.input input{
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: white;
+   
+    
+}
+ input[type = "text"]{
+ border: none;
+
+ border-bottom: 1.5px solid rgb(221, 221, 221);
+}
+input[type = "password"]{
+    border: none;
+   
+    border-bottom: 1.5px solid rgb(221, 221, 221);
+   }
+   input[type = "date"]{
+    border: none;
+   
+    border-bottom: 1.5px solid rgb(221, 221, 221);
+   }
+ 
+.btn_login button{
+    border: none;
+    background-color:#007bffd9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius:2px;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn_login a{
+    border: none;
+    background-color:#007bffd9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius:2px;
+}
+.titulo_login{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.msg{
+    margin-top: 30px;
+    font-size: 18px;
+    color: red;
+}
+/*register*/
+.contenedor_modal_registrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; 
+    pointer-events: none; 
+   opacity: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+   cursor: pointer;
+}
+.AbriRegister{
+    opacity:1;
+    pointer-events: auto;
+    animation:  addLogin 3s;
+}
+@keyframes  addRegister {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+  } 
+  @keyframes  removeRegister {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+       top: -300px;
+        opacity: 0;
+    }
+  }
+
+
+.form_register{
+    width: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: white;
+    box-shadow: 1px 2px 20px 2px rgb(221, 221, 221);
+    padding-top: 50px;
+   padding-left: 60px;
+   padding-right: 50px;
+   padding-bottom: 50px;
+}
+.form_register h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.form_register div{
+    width: 100%;
+}
+.input_register{
+    margin-bottom: 20px;
+}
+.division_register {
+   display: flex;
+   
+}
+.input_register input{
+     width: 90%;
+     height: 30px;
+     font-size: 18px;
+     padding: 10px 20px;
+}
+.input_date input{
+    width: 45%;
+    border: none;
+    height: 30px;
+     font-size: 18px;
+     padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.botones_register{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.botones_register a{
+    border: none;
+    background-color:#007bffd9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius:2px;
+    text-decoration: none;
+}
+.botones_register button{
+    border: none;
+    background-color:#007bffd9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius:2px
+}

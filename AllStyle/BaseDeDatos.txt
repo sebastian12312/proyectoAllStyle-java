@@ -1,0 +1,41 @@
+create database AllStyle;
+
+use AllStyle;
+
+create table usuarios(
+	dni int(8) primary key,
+    nombres varchar(20),
+    apellidos varchar(20),
+    telefono int(9),
+    correo varchar(30) unique,
+    contraseña varchar(30),
+    rol varchar(10),
+    nacimiento date
+);
+
+create table productos(
+    idProducto varchar(10) primary key,
+    nombre varchar(30),
+    descripcion varchar(50),
+    stock int,
+    precio double,
+    genero char,
+    categoria varchar(10),    
+    imagen varchar(50)
+);
+
+create table boletas(
+	idBoleta varchar(10) primary key,
+    dni int(8) references dni(usuarios),
+    impuesto double,
+    fecha date,
+    estado varchar(10)
+);
+
+create table detallesBoleta(
+	idBoleta varchar(10) references idBoleta(boletas),
+    idProducto varchar(10) references idProducto(productos),
+    cantidad int,
+    descuento float,
+    importe int
+);
